@@ -1,0 +1,19 @@
+[package]
+name = "astarpa"
+authors = ["Ragnar Groot Koerkamp", "Pesho Ivanov"]
+description = "An exact global pairwise aligner using A* with the [chaining] seed heurstic and match pruning."
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/RagnarGrootKoerkamp/astar-pairwise-aligner"
+license = "MPL-2.0"
+keywords = ["alignment", "edit-distance", "A*", "bioinformatics"]
+readme = "README.org"
+categories = ["science"]
+
+[dependencies]
+
+[dev-dependencies]
+# For benchmarking only.
+triple_accel = "0.4"
+rand = "0.8"
+pa-generate.workspace = true

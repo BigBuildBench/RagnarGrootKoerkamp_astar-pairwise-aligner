@@ -1,0 +1,28 @@
+[package]
+name = "pa-heuristic"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+pa-generate.workspace = true
+aho-corasick = "0.7"
+lazy_static = "1"
+suffix = "1"
+criterion = { version = "0.4.0" }
+
+[features]
+# Enable marking matches as pruned in SH.
+example = []
+
+
+[[bench]]
+name = "qgrams"
+harness = false
+
+[[bench]]
+name = "matches"
+harness = false

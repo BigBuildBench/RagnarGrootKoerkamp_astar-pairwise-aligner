@@ -1,0 +1,9 @@
+[package]
+name = "pa-vis"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[features]
+sdl = ["dep:sdl2"]
